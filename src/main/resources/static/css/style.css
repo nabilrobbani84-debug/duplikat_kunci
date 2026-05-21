@@ -55,12 +55,24 @@ ul {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: 700;
     color: var(--primary-color);
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    min-width: 0;
+}
+
+.logo-mark {
+    width: 72px;
+    height: 44px;
+    object-fit: contain;
+    flex: 0 0 auto;
+}
+
+.logo span {
+    line-height: 1.15;
 }
 
 .nav-links {
@@ -352,6 +364,16 @@ footer {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
+    }
+
+    .logo {
+        font-size: 1rem;
+        gap: 8px;
+    }
+
+    .logo-mark {
+        width: 56px;
+        height: 36px;
     }
     
     .menu-toggle {
