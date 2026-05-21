@@ -6,5 +6,5 @@ RUN mvn clean package -DskipTests
 # Step 2: Run menggunakan OpenJDK 17
 FROM openjdk:17-jdk-slim
 COPY --from=build /target/duplikat-kunci-0.0.1-SNAPSHOT.jar app.jar
-EXPOSE 9090
+EXPOSE 10000
 ENTRYPOINT ["java", "-jar", "app.jar"]
